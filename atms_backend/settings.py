@@ -150,3 +150,10 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 DEFAULT_FROM_EMAIL = 'noreply@atms-vms.com'
 
 
+# VNOX Configuration
+VNOX_APP_KEY = os.getenv('VNOX_APP_KEY', 'a560b6661ce24349a6d148585a120fcb')
+VNOX_APP_SECRET = os.getenv('VNOX_APP_SECRET', '55bf1e51586f45028d378a533e769a25')
+VNOX_BASE_URL = os.getenv('VNOX_BASE_URL', 'https://open-in.vnnox.com')
+VNOX_TIMEOUT = int(os.getenv('VNOX_TIMEOUT', '30'))
+
+
